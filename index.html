@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christine Angela Reboredo | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    nav {
+      background: #34495e;
+      text-align: center;
+      padding: 12px 0;
+    }
+    nav a {
+      color: #ecf0f1;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 960px;
+      margin: 30px auto;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 12px;
+    }
+    .project h3 {
+      margin-bottom: 5px;
+      color: #34495e;
+    }
+    footer {
+      background: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    a {
+      color: #3498db;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      const options = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, options);
+
+      sections.forEach(section => {
+        section.style.opacity = 0;
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'all 0.6s ease-out';
+        observer.observe(section);
+      });
+    });
+  </script>
+</head>
+<body>
+<header>
+  <img src="ID_pic.jpg" alt="Christine Angela Reboredo" style="width:140px;height:140px;border-radius:50%;margin-bottom:10px;border: 4px solid #ffffff;box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+  <h1>Christine Angela Reboredo</h1>
+  <p>General VA | Client Success Expert | Social Media Manager</p>
+</header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Christine — a reliable and detail-oriented professional with over 10 years of experience in administrative support, customer service, and team coordination. I specialize in helping executives and business owners stay organized, productive, and focused by managing schedules, handling communication, and streamlining daily operations. With a strong background in the BPO industry and hands-on experience with CRM tools, reporting, and remote collaboration, I’m confident in my ability to deliver high-quality virtual assistance with a personal touch.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>PartnerHero – Team Manager</strong> (2023–Present)<br> Leading operations for startup clients across the US and Canada. Coaching, reporting, and process improvement are my core responsibilities.</li>
+      <li><strong>TDCX – Team Lead</strong> (2020–2023)<br> Grew from Associate to Team Lead, supporting Facebook/Meta advertisers. Managed 15 associates and was recognized as a top-performing leader in 2023.</li>
+      <li><strong>iQor – Technical Support, Billing & Sales Specialist</strong> (2019–2023)<br> Handled tech support and upselling for a major US telco. Focused on resolution and customer satisfaction.</li>
+      <li><strong>Teletech – Escalation Team Lead</strong> (2011–2019)<br> Started as a rep and promoted to Team Lead. Co-launched the TinkerBot project and implemented new process maps.</li>
+      <li><strong>Concentrix – Apple Technical Support Advisor</strong> (2010–2011)<br> Provided tech support for APAC Apple users. Specialized in Apple ID and hardware issues.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Startup Client Ops Support</h3>
+      <p>Managed operations, metrics, and performance insights for US/Canada-based startups at PartnerHero. Supported clients across customer service and sales.</p>
+    </div>
+    <div class="project">
+      <h3>Meta Advertiser Training & Leadership</h3>
+      <p>Trained and mentored associates at TDCX, transitioning from SME to Team Lead. Recognized for most improved and top-performing team.</p>
+    </div>
+    <div class="project">
+      <h3>TinkerBot Launch – Teletech</h3>
+      <p>Collaborated in the launch of the TinkerBot support tool. Developed new process maps to enhance customer satisfaction.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Helpdesk & CRM: Salesforce, Zendesk, Go High Level, Jira, ReAmaze</li>
+      <li>Communication & Leadership</li>
+      <li>Technical Support & Troubleshooting</li>
+      <li>Social Media Management (Meta Ads Specialist)</li>
+      <li>Tools: Canva, Adobe Lightroom, MS Office 365, Google Workspace</li>
+    </ul>
+  </section>
+
+  
+    
+  </section>
+    <p>
+      <a href="Christine_Angela_Reboredo_Resume.pdf" download style="display:inline-block;margin-top:15px;padding:10px 20px;background:#2c3e50;color:#fff;text-decoration:none;border-radius:5px;">Download Resume</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Christine Angela Reboredo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
